@@ -1,0 +1,54 @@
+/* Sugerido para: src/app/components/footer/footer.css */
+.footer {
+  background: linear-gradient(90deg, #24292e 60%, #007bff 100%);
+  color: #fff;
+  padding: 1.2rem 0;
+  box-shadow: 0 -4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.footer-social:hover .footer-social-text,
+.footer-social:hover svg {
+  color: #00c6ff;
+  fill: #00c6ff;
+}
+
+.footer-social svg {
+  vertical-align: middle;
+  transition: fill 0.2s;
+}
+
+.footer-social-text {
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

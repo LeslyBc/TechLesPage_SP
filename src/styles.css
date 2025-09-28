@@ -1,1 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+/* Reset y tipografía */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(90deg, #24292e 60%, #007bff 100%);
+  color: #fff;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Imágenes responsivas */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Contenedor principal */
+.main-container {
+  flex: 1;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Espacio entre header, contenido y footer */
+header {
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  margin-top: 0.5rem;
+}
+
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 700px) {
+  .main-container {
+    padding: 1rem 0.3rem;
+  }
+}
+
