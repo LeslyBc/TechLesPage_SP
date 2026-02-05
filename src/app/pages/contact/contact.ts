@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ContactInterface } from '../contact-interface';
@@ -6,11 +7,19 @@ import { FormsModule, NgForm, NgModel } from '@angular/forms';
 @Component({
   selector: 'app-contact',
   imports: [CommonModule, FormsModule],
+=======
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-contact',
+  imports: [],
+>>>>>>> e780d377514bff7525afecf2ed634cf3dde72281
   templateUrl: './contact.html',
   styleUrl: './contact.css'
 })
 export class Contact {
 
+<<<<<<< HEAD
   datos : ContactInterface = {
       nombre: '',
       email: '',
@@ -30,4 +39,6 @@ export class Contact {
       mensaje: ''
     };
   }
+=======
+>>>>>>> e780d377514bff7525afecf2ed634cf3dde72281
 }

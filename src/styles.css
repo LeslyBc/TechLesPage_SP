@@ -7,10 +7,20 @@
 }
 
 body {
+<<<<<<< HEAD
   background: radial-gradient(circle at top, #5f0a87, #000000 60%);
   color: #e0e0e0;
   margin: 0;
   font-family: 'Poppins', sans-serif;
+=======
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(90deg, #24292e 60%, #007bff 100%);
+  color: #fff;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+>>>>>>> e780d377514bff7525afecf2ed634cf3dde72281
 }
 
 /* Imágenes responsivas */

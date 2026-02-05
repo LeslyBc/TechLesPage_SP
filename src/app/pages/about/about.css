@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .about-page {
   max-width: 800px;
   margin: 50px auto;
@@ -103,3 +104,112 @@
     transform: translateY(0);
   }
 }
+=======
+/* Fondo y página completa */
+.about-page { /* Estilos para el contenedor principal de la página About */
+  min-height: calc(100vh - 2.4rem); /* Altura mínima para ocupar toda la pantalla menos header y footer */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  color: #fff; /* Color de texto blanco */
+  display: flex; /* Usa flexbox para organizar el contenido */
+  flex-direction: column; /* Organiza los hijos en columna */
+  justify-content: flex-start; /* Alinea el contenido al inicio verticalmente */
+  align-items: center; /* Centra el contenido horizontalmente */
+  padding: 1.5rem 1rem; /* Espaciado interno arriba/abajo y a los lados */
+  box-sizing: border-box; /* Incluye el padding en el cálculo del tamaño */
+  text-align: center; /* Centra el texto */
+  overflow-x: hidden; /* Evita el scroll horizontal */
+  
+}
+
+/* Título principal */
+.about-page h2 { /* Estilos para el título principal */
+  font-size: 2.5rem; /* Tamaño grande de fuente */
+  font-weight: 700; /* Negrita */
+  margin-bottom: 1.5rem; /* Espacio debajo del título */
+  letter-spacing: 2px; /* Espaciado entre letras */
+  color: #fff; /* Color blanco */
+  text-shadow: 0 2px 8px rgba(0,0,0,0.18); /* Sombra para el texto */
+  width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+/* Párrafos */
+.about-page p { /* Estilos para los párrafos */
+  font-size: 1.2rem; /* Tamaño de fuente mediano */
+  margin-bottom: 1.2rem; /* Espacio debajo de cada párrafo */
+  line-height: 1.7; /* Altura de línea para mejor lectura */
+  color: #f3f3f3; /* Color de texto gris claro */
+  max-width: 700px; /* Máximo ancho del párrafo */
+  margin-left: auto; /* Centra horizontalmente */
+  margin-right: auto; /* Centra horizontalmente */
+  text-align: justify; /* Justifica el texto */
+}
+
+/* Lista de integrantes */
+.about-page ul { /* Estilos para la lista de integrantes */
+  list-style: none; /* Quita los puntos de la lista */
+  padding: 0; /* Sin relleno */
+  margin: 1.5rem 0 2rem 0; /* Espacio arriba y abajo de la lista */
+  display: flex; /* Usa flexbox para la lista */
+  flex-direction: column; /* Organiza los elementos en columna */
+  gap: 0.8rem; /* Espacio entre los elementos de la lista */
+  align-items: center; /* Centra los elementos horizontalmente */
+  width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+.about-page li { /* Estilos para cada integrante */
+  background: rgba(255,255,255,0.10); /* Fondo blanco semitransparente */
+  border-radius: 18px; /* Bordes redondeados */
+  padding: 0.7rem 1.5rem; /* Espaciado interno */
+  font-weight: 600; /* Negrita */
+  font-size: 1.1rem; /* Tamaño de fuente */
+  color: #fff; /* Color de texto blanco */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10); /* Sombra para el elemento */
+  transition: background 0.2s, transform 0.2s; /* Transiciones suaves en hover */
+  max-width: 350px; /* Máximo ancho del elemento */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  margin: 0 auto; /* Centra horizontalmente */
+  text-align: center; /* Centra el texto */
+}
+
+.about-page li:hover { /* Efecto al pasar el mouse sobre un integrante */
+  background: #007bff; /* Cambia el fondo a azul */
+  color: #fff; /* Mantiene el texto blanco */
+  transform: scale(1.04); /* Agranda ligeramente el elemento */
+}
+
+/* Resaltado de nombres y alias */
+.about-page strong { /* Estilos para texto en negrita */
+  color: #00c6ff; /* Color azul claro */
+}
+
+.about-page em { /* Estilos para alias */
+  color: #ffd700; /* Color dorado */
+  font-style: normal; /* Quita la cursiva */
+  font-weight: 600; /* Negrita */
+}
+
+/* Responsive */
+@media (max-width: 700px) { /* Estilos para pantallas pequeñas */
+  .about-page {
+    padding: 1.2rem 0.7rem; /* Reduce el padding */
+  }
+  .about-page h2 {
+    font-size: 1.5rem; /* Reduce el tamaño del título */
+    margin-bottom: 1rem; /* Reduce el espacio debajo del título */
+  }
+  .about-page p {
+    font-size: 1rem; /* Reduce el tamaño de los párrafos */
+    max-width: 100%; /* Ocupa todo el ancho disponible */
+    margin-bottom: 1rem; /* Reduce el espacio debajo de los párrafos */
+  }
+  .about-page ul {
+    gap: 0.5rem; /* Reduce el espacio entre elementos */
+    margin: 1rem 0 1.2rem 0; /* Reduce el espacio arriba y abajo de la lista */
+  }
+  .about-page li {
+    font-size: 1rem; /* Reduce el tamaño de los integrantes */
+    padding: 0.5rem 0.7rem; /* Reduce el padding */
+    max-width: 100%; /* Ocupa todo el ancho disponible */
+  }
+}
+>>>>>>> e780d377514bff7525afecf2ed634cf3dde72281
