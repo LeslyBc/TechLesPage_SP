@@ -1,0 +1,56 @@
+.footer {
+  background: linear-gradient(90deg, #000000, #1b0033, #000000);
+  padding: 25px 15px;
+  box-shadow: 0 -4px 20px rgba(114, 9, 183, 0.4);
+  margin-top: 80px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer-title {
+  color: #cdb4ff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+}
+
+/* Link GitHub */
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+}
+
+.footer-social-text {
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+/* Hover tech */
+.footer-social:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 0 15px rgba(183, 94, 255, 0.7);
+  background: rgba(183, 94, 255, 0.15);
+}
+
+/* Efecto glow al icono */
+.footer-social:hover svg circle {
+  fill: #7209b7;
+  transition: fill 0.3s ease;
+}

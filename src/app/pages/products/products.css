@@ -1,0 +1,101 @@
+.productos-section {
+  padding: 50px 20px;
+}
+
+/* Título principal */
+.productos-section h1 {
+  text-align: center;
+  font-size: 3.4rem;
+  margin-bottom: 70px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow:
+    0 0 20px rgba(183, 94, 255, 1),
+    0 0 45px rgba(114, 9, 183, 0.9);
+}
+
+/* Grid */
+.productos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 50px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* Card */
+.producto-card {
+  position: relative;
+  padding: 30px 25px;
+  border-radius: 28px;
+  background: linear-gradient(
+    160deg,
+    rgba(114, 9, 183, 0.25),
+    rgba(0, 0, 0, 0.75)
+  );
+  box-shadow:
+    0 0 25px rgba(114, 9, 183, 0.6),
+    inset 0 0 20px rgba(183, 94, 255, 0.2);
+  text-align: center;
+  transition: all 0.45s ease;
+  overflow: hidden;
+}
+
+/* Borde luminoso animado */
+.producto-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 28px;
+  padding: 2px;
+  background: linear-gradient(135deg, #b75eff, #7209b7, #000000);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  opacity: 0.6;
+}
+
+/* Hover potente */
+.producto-card:hover {
+  transform: translateY(-14px) scale(1.06);
+  box-shadow:
+    0 0 45px rgba(183, 94, 255, 0.9),
+    0 0 80px rgba(114, 9, 183, 0.8);
+}
+
+/* Imagen */
+.producto-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  margin-bottom: 25px;
+  filter:
+    drop-shadow(0 0 15px rgba(183, 94, 255, 0.9));
+}
+
+/* Nombre */
+.producto-card h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+/* Descripción */
+.producto-card .descripcion {
+  color: #e0d7ff;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+/* Precio */
+.producto-card .precio {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #b75eff;
+  text-shadow: 0 0 15px rgba(183, 94, 255, 1);
+}

@@ -1,0 +1,60 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(90deg, #000000, #1b0033, #000000);
+  padding: 15px 0;
+  box-shadow: 0 4px 20px rgba(114, 9, 183, 0.4);
+  backdrop-filter: blur(8px);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Links del navbar */
+nav a {
+  color: #e9d5ff;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  position: relative;
+  padding: 8px 5px;
+  transition: all 0.3s ease;
+}
+
+/* Línea animada debajo */
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #7209b7, #b75eff);
+  transition: width 0.3s ease;
+}
+
+/* Hover */
+nav a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(183, 94, 255, 0.8);
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Link activo (Angular) */
+nav a.router-link-active {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+nav a.router-link-active::after {
+  width: 100%;
+}
