@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { Component, Input } from '@angular/core';
 import { ProductsInterface } from '../productsInterface';
 import { CommonModule } from '@angular/common';
@@ -6,19 +5,10 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-products',
   imports: [CommonModule],
-=======
-import { Component } from '@angular/core';
-
-@Component({
-  selector: 'app-products',
-  imports: [],
->>>>>>> e780d377514bff7525afecf2ed634cf3dde72281
   templateUrl: './products.html',
   styleUrl: './products.css'
 })
 export class Products {
-
-<<<<<<< HEAD
 
   productos: ProductsInterface [] = [
     {
@@ -60,6 +50,3 @@ export class Products {
   ];
 
   }
-=======
-}
->>>>>>> e780d377514bff7525afecf2ed634cf3dde72281

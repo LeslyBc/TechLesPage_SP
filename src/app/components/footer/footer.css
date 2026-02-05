@@ -1,23 +1,13 @@
-<<<<<<< HEAD
 .footer {
   background: linear-gradient(90deg, #000000, #1b0033, #000000);
   padding: 25px 15px;
   box-shadow: 0 -4px 20px rgba(114, 9, 183, 0.4);
   margin-top: 80px;
-=======
-/* Sugerido para: src/app/components/footer/footer.css */
-.footer {
-  background: linear-gradient(90deg, #24292e 60%, #007bff 100%);
-  color: #fff;
-  padding: 1.2rem 0;
-  box-shadow: 0 -4px 12px rgba(0,0,0,0.08);
-  text-align: center;
->>>>>>> e780d377514bff7525afecf2ed634cf3dde72281
+
 }
 
 .footer-content {
   display: flex;
-<<<<<<< HEAD
   justify-content: space-between;
   align-items: center;
   max-width: 1100px;
@@ -65,48 +55,3 @@
   fill: #7209b7;
   transition: fill 0.3s ease;
 }
-=======
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.footer-title {
-  font-weight: 600;
-  font-size: 1.1rem;
-  letter-spacing: 1px;
-}
-
-.footer-social {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s;
-}
-
-.footer-social:hover .footer-social-text,
-.footer-social:hover svg {
-  color: #00c6ff;
-  fill: #00c6ff;
-}
-
-.footer-social svg {
-  vertical-align: middle;
-  transition: fill 0.2s;
-}
-
-.footer-social-text {
-  font-size: 1rem;
-}
-
-@media (max-width: 600px) {
-  .footer-content {
-    flex-direction: column;
-    gap: 1rem;
-  }
-}
->>>>>>> e780d377514bff7525afecf2ed634cf3dde72281
